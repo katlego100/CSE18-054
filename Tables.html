@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewpoint" content="device-width, initial-scale=1">
+	<title>FNB Premiership Table</title>
+	<link rel="stylesheet" href="styles.css">
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #e7f0eb;
+			margin: 0;
+			padding: 20px;
+		}
+		
+		h1 {
+			text-align: center;
+			color: #005c36;
+		}
+		
+		table {
+			width: 100%;
+			border-collapse: collapse;
+			margin-top: 20px;
+			background-color: white;
+			box-shadow: 0 0 10px rgba(0,0,0,0.1);
+		}
+		
+		th, td {
+			padding: 12px;
+			text-align: center;
+			border-bottom: 1px solid #ddd;
+		}
+		
+		th {
+			background-color: #005c36;
+			color: white;
+		}
+		
+		tr:hover {
+			background-color: #f2f2f2;
+		}
+		
+		.form span {
+			display: inline-block;
+			width: 24px;
+			height: 24px;
+			line-height: 24px;
+			margin: 0 2px;
+			border-radius: 50%;
+			font-size: 12px;
+			color: white;
+			background-color: grey;
+		}
+		
+		.form .W {
+			background-color: green;
+		}
+		
+		.form .L {
+			background-color: red;
+		}
+		
+		.form .D {
+			background-color: orange;
+		}
+		
+		.table-switcher {
+			text-align: center;
+			margin-bottom: 15px;
+		}
+		
+		.table-switcher button {
+			padding: 8px 16px;
+			background-color: #005c36;
+			color: white;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			font-weight: bold;
+		}
+		
+		.table-switcher button:hover {
+			background-color: #007147;
+		}
+		
+		.champion {
+			background-color: #42f593;
+			font-weight: bold;
+		}
+		
+		.relegation {
+			background-color: #f8d7da;
+			font-weight: bold;
+		}
+	</style>
+</head>
+
+<body>
+	
+	<header>
+		<img src="FNBlogo.jpg" alt="logo" class="logo" width="70" height="70"><br>
+		<div class="nav-container">
+
+			<nav>
+				
+				<ul class="nav-links">
+					
+					<li><a href="FNBHome.html">Home</a></li>
+					<li><a href="Fixtures.html">Fixtures</a></li>
+					<li><a href="Results.html">Results</a></li>
+					<li><a href="Tables.html">Tables</a></li>
+					<li><a href="Transfers.html">Transfers</a></li>
+					<li><a href="Injury-News.html">Injury News</a></li>
+					<li><a href="Stats.html">Stats</a></li>
+					<li><a href="Clubs&Players.html">Clubs & Players</a></li>
+					
+				</ul>
+			</nav>
+		</div>
+	</header>
+	
+	<h1>FNB Premiership Table</h1>
+	
+	<!--<div class="table-switcher">
+		
+		<button id="showTop" onclick="showTop8()" style="display: none;"> ◄ Top 8 </button>
+		<button id="showBottom" onclick="showBottom8()" style="display: none;"> Bottom 8 ► </button>
+		
+	</div>-->
+	
+	<table style="width: 100%"; border-collapse: collapse;>
+		
+		<tr>
+			<th>Position</th>
+			<th>Club</th>
+			<th>Played</th>
+			<th>Won</th>
+			<th>Drawn</th>
+			<th>Lost</th>
+			<th>GF</th>
+			<th>GA</th>
+			<th>GD</th>
+			<th>Points</th>
+			<th>Form</th>
+		</tr>
+		
+		<tr class="champion">
+			<td>1</td>
+			<td>Gaborone United</td>
+			<td>27</td>
+			<td>17</td>
+			<td>6</td>
+			<td>4</td>
+			<td>47</td>
+			<td>21</td>
+			<td>26</td>
+			<td><strong>57</strong></td>
+			<td class="form"> <span class="L">L</span> <span class="D">D</span> <span class="W">W</span> <span class="W">W</span> <span class="W">W</span></td>
+		</tr>
+		
+		<tr>
+			<td>2</td>
+			<td>Jwaneng Galaxy</td>
+			<td>27</td>
+			<td>15</td>
+			<td>12</td>
+			<td>0</td>
+			<td>41</td>
+			<td>16</td>
+			<td>25</td>
+			<td><strong>57</strong></td>
+			<td class="form"> <span class="D">D</span> <span class="D">D</span> <span class="W">W</span> <span class="W">W</span> <span class="W">W</span></td>
+		</tr>
+		
+		<tr>
+			<td>3</td>
+			<td>Tafic FC</td>
+			<td>27</td>
+			<td>16</td>
+			<td>7</td>
+			<td>4</td>
+			<td>46</td>
+			<td>20</td>
+			<td>26</td>
+			<td><strong>55</strong></td>
+			<td class="form"> <span class="L">L</span> <span class="D">D</span> <span class="W">W</span> <span class="W">W</span> <span class="W">W</span></td>
+		</tr>
+		
+		<tr>
+			<td>4</td>
+			<td>Sua Flamingoes</td>
+			<td>27</td>
+			<td>15</td>
+			<td>7</td>
+			<td>5</td>
+			<td>53</td>
+			<td>26</td>
+			<td>27</td>
+			<td><strong>52</strong></td>
+			<td class="form"> <span class="L">L</span> <span class="D">D</span> <span class="W">W</span> <span class="W">W</span> <span class="W">W</span></td>
+		</tr>
+		
+		<tr>
+			<td>5</td>
+			<td>Mochudi Centre Chiefs</td>
+			<td>27</td>
+			<td>13</td>
+			<td>11</td>
+			<td>3</td>
+			<td>42</td>
+			<td>17</td>
+			<td>25</td>
+			<td><strong>50</strong></td>
+			<td class="form"> <span class="L">L</span> <span class="D">D</span> <span class="W">W</span> <span class="W">W</span> <span class="W">W</span></td>
+		</tr>
+		
+		<tr>
+			<td>6</td>
+			<td>Township Rollers</td>
+			<td>27</td>
+			<td>14</td>
+			<td>8</td>
+			<td>5</td>
+			<td>34</td>
+			<td>25</td>
+			<td>9</td>
+			<td><strong>50</strong></td>
+			<td class="form"> <span class="L">L</span> <span class="D">D</span> <span class="W">W</span> <span class="W">W</span> <span class="W">W</span></td>
+		</tr>
+		
+		<tr>
+			<td>7</td>
+			<td>Morupule Wanderers</td>
+			<td>27</td>
+			<td>12</td>
+			<td>5</td>
+			<td>10</td>
+			<td>38</td>
+			<td>31</td>
+			<td>7</td>
+			<td><strong>41</strong></td>
+			<td class="form"> <span class="L">L</span> <span class="D">D</span> <span class="W">W</span> <span class="W">W</span> <span class="W">W</span></td>
+		</tr>
+		
+		<tr>
+			<td>8</td>
+			<td>Orapa United</td>
+			<td>27</td>
+			<td>7</td>
+			<td>12</td>
+			<td>8</td>
+			<td>29</td>
+			<td>28</td>
+			<td>1</td>
+			<td><strong>33</strong></td>
+			<td class="form"> <span class="L">L</span> <span class="D">D</span> <span class="W">W</span> <span class="W">W</span> <span class="W">W</span></td>
+		</tr>
+		
+		<tr>
+			<td>9</td>
+			<td>VTM FC</td>
+			<td>27</td>
+			<td>7</td>
+			<td>9</td>
+			<td>11</td>
+			<td>34</td>
+			<td>33</td>
+			<td>1</td>
+			<td><strong>30</strong></td>
+			<td class="form"> <span class="L">L</span> <span class="D">D</span> <span class="W">W</span> <span class="W">W</span> <span class="W">W</span></td>
+		</tr>
+		
+		<tr>
+			<td>10</td>
+			<td>Matebele FC</td>
+			<td>27</td>
+			<td>8</td>
+			<td>6</td>
+			<td>13</td>
+			<td>30</td>
+			<td>39</td>
+			<td>-9</td>
+			<td><strong>30</strong></td>
+			<td class="form"> <span class="L">L</span> <span class="D">D</span> <span class="W">W</span> <span class="W">W</span> <span class="W">W</span></td>
+		</tr>
+		
+		<tr>
+			<td>11</td>
+			<td>Extension Gunners</td>
+			<td>27</td>
+			<td>8</td>
+			<td>5</td>
+			<td>14</td>
+			<td>24</td>
+			<td>39</td>
+			<td>-13</td>
+			<td><strong>29</strong></td>
+			<td class="form"> <span class="L">L</span> <span class="D">D</span> <span class="W">W</span> <span class="W">W</span> <span class="W">W</span></td>
+		</tr>
+		
+		<tr>
+			<td>12</td>
+			<td>Nico United</td>
+			<td>27</td>
+			<td>6</td>
+			<td>9</td>
+			<td>12</td>
+			<td>15</td>
+			<td>30</td>
+			<td>-15</td>
+			<td><strong>27</strong></td>
+			<td class="form"> <span class="L">L</span> <span class="D">D</span> <span class="W">W</span> <span class="W">W</span> <span class="W">W</span></td>
+		</tr>
+		
+		<tr>
+			<td>13</td>
+			<td>BDF XI SC</td>
+			<td>27</td>
+			<td>5</td>
+			<td>10</td>
+			<td>12</td>
+			<td>22</td>
+			<td>31</td>
+			<td>-9</td>
+			<td><strong>25</strong></td>
+			<td class="form"> <span class="L">L</span> <span class="D">D</span> <span class="W">W</span> <span class="W">W</span> <span class="W">W</span></td>
+		</tr>
+		
+		<tr>
+			<td>14</td>
+			<td>Security Systems</td>
+			<td>27</td>
+			<td>5</td>
+			<td>7</td>
+			<td>15</td>
+			<td>18</td>
+			<td>38</td>
+			<td>-20</td>
+			<td><strong>22</strong></td>
+			<td class="form"> <span class="L">L</span> <span class="D">D</span> <span class="W">W</span> <span class="W">W</span> <span class="W">W</span></td>
+		</tr>
+		
+		<tr class="relegation">
+			<td>15</td>
+			<td>Chadibe FC</td>
+			<td>27</td>
+			<td>2</td>
+			<td>10</td>
+			<td>15</td>
+			<td>17</td>
+			<td>50</td>
+			<td>-33</td>
+			<td><strong>16</strong></td>
+			<td class="form"> <span class="L">L</span> <span class="D">D</span> <span class="W">W</span> <span class="W">W</span> <span class="W">W</span></td>
+		</tr>
+		
+		<tr class="relegation">
+			<td>R</td>
+			<td>Union Flamengo Santos</td>
+			<td>27</td>
+			<td>1</td>
+			<td>6</td>
+			<td>20</td>
+			<td>12</td>
+			<td>60</td>
+			<td>-48</td>
+			<td><strong>9</strong></td>
+			<td class="form"> <span class="L">L</span> <span class="D">D</span> <span class="W">W</span> <span class="W">W</span> <span class="W">W</span></td>
+		</tr>
+		
+	</table>
+	
+	<!--<script>
+		
+		function showBottom8() {
+			document.getElementById('top8').style.display = 'none';
+			document.getElementById('bottom8').style.display = 'table';
+			document.getElementById('showTop').style.display = 'inline-block';
+			document.getElementById('showBottom').style.display = 'none';
+		}
+		
+		function showTop8() {
+			document.getElementById('top8').style.display = 'table';
+			document.getElementById('bottom8').style.display = 'none';
+			document.getElementById('showTop').style.display = 'none';
+			document.getElementById('showBottom').style.display = 'inline-block';
+		}
+		
+	</script>-->
+
+</body>
+</html>
