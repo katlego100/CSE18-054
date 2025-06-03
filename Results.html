@@ -8,6 +8,46 @@
 	<title>FNB Botswana Premier League</title>
 	<link rel="stylesheet" href="styles.css">
 	
+	<style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f9ff;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      color: #002f6c;
+      margin-bottom: 1rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    th, td {
+      padding: 1rem;
+      border: 1px solid #ddd;
+      text-align: center;
+    }
+
+    th {
+      background-color: #0055a4;
+      color: white;
+    }
+
+    tr:hover {
+      background-color: #f0f8ff;
+    }
+
+    .score {
+      font-weight: bold;
+      color: #002f6c;
+    }
+  </style>
 </head>
 
 <body>
@@ -25,14 +65,66 @@
 					<li><a href="Results.html">Results</a></li>
 					<li><a href="Tables.html">Tables</a></li>
 					<li><a href="Transfers.html">Transfers</a></li>
-					<li><a href="Injury-News.html">Injury News</a></li>
+					<li><a href="News.html">News</a></li>
 					<li><a href="Stats.html">Stats</a></li>
-					<li><a href="Clubs&Players.html">Clubs & Players</a></li>
+					<<li><a href="ContactUs.html">Contact Us</a></li>
 					
 				</ul>
 			</nav>
 		</div>
 	</header>
+	
+	<section class="section">
+  <h2>Matchweek 24 Results</h2>
+
+  <div style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: flex-start;">
+
+    <!-- Left Column: Match Results -->
+    <div style="flex: 1 1 60%;">
+      <table style="width: 100%; border-collapse: collapse; background-color: white;">
+        <thead style="background-color: #0055a4; color: white;">
+          <tr>
+            <th>Date</th>
+            <th>Home</th>
+            <th>Score</th>
+            <th>Away</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>May 25</td>
+            <td title="Township Rollers">TWN</td>
+            <td>2 - 1</td>
+            <td title="Gaborone United">GBU</td>
+          </tr>
+          <tr>
+            <td>May 25</td>
+            <td title="Orapa United">ORU</td>
+            <td>1 - 1</td>
+            <td title="Police XI">PLX</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Right Column: Post-game Content -->
+    <div style="flex: 1 1 35%;">
+      <h3>Post-Match Interviews</h3>
+      <video controls width="100%" style="border: 1px solid #ccc; border-radius: 10px; margin-bottom: 1rem;">
+        <source src="Jwaneng-Coach.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+      <h3>Match Highlights</h3>
+      <video controls width="100%" style="border: 1px solid #ccc; border-radius: 10px;">
+        <source src="Sua-highlights.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+  </div>
+</section>
+
 
 </body>
 </html>
